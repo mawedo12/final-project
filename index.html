@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akojeh Diana - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+            <!-- Rotating logo -->
+            <div class="logo"></div>
+            <h1 class="name">Akojeh Diana</h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Akojeh Diana, a passionate web enthusiast. I love crafting interactive, responsive, and visually appealing websites using HTML, CSS, and JavaScript. My goal is to create digital experiences that are both functional and beautiful.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>Responsive landing page built with HTML, CSS, and JavaScript.</p>
+                <a href="https://splendid-puppy-fa8830.netlify.app/">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>Portfolio website showcasing creative animations.</p>
+                <a href="https://dapper-pegasus-54f648.netlify.app/" target="_blank">View Project</a>
+            </div>
+            <!-- <div class="card">
+                <h3>Project Three</h3>
+                <p>Interactive quiz game built in vanilla JavaScript.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <div class="skill-bar">
+            <p>HTML</p>
+            <div class="bar"><span data-skill="90"></span></div>
+        </div>
+        <div class="skill-bar">
+            <p>CSS</p>
+            <div class="bar"><span data-skill="85"></span></div>
+        </div>
+        <div class="skill-bar">
+            <p>JavaScript</p>
+            <div class="bar"><span data-skill="75"></span></div>
+        </div>
+    </section>
+
+
+
+
+    <!-- CONTACT SECTION -->
+<section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p><strong>Name:</strong> Akojeh Diana</p>
+            <p><strong>Email:</strong> <a href="mailto:dianaakojeh@gmail.com">dianaakojeh@gmail.com</a></p>
+            <p><strong>Phone:</strong> +234 8146814810</p>
+            <div class="social-links">
+                <a href="https://github.com/mawedo12" target="_blank">📂 GitHub</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <!-- <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form> -->
+    </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>©  2025 Akojeh Diana. All rights reserved. Built with ❤️ and vanilla JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

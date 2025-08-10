@@ -1,0 +1,182 @@
+/* === COLOR VARIABLES === */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --primary-color: #007BFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* === HEADER === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* === NAVIGATION === */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* === SECTIONS === */
+section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* === PROJECT CARDS === */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: var(--bg-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    color: var(--primary-color);
+}
+
+/* === SKILL BARS === */
+.skill-bar {
+    margin-bottom: 1rem;
+}
+
+.bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 10px;
+    background: var(--primary-color);
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* === CONTACT FORM === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, textarea, button {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* === DARK MODE === */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #66ccff;
+}
+
+/* === FADE-IN ANIMATION === */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background: var(--bg-color);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 1rem;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
